@@ -13,7 +13,7 @@ free -h
       parallel {
         stage('2') {
           steps {
-            sh 'sudo mkdir /media/1'
+            sh 'df -h'
           }
         }
 
