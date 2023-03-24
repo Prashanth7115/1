@@ -13,7 +13,7 @@ free -h
       parallel {
         stage('2') {
           steps {
-            sh 'mkdir /media/1'
+            sh 'sudo mkdir /media/1'
           }
         }
 
@@ -34,7 +34,7 @@ free -h
           }
         }
 
-        stage('') {
+        stage('error') {
           steps {
             echo 'going to sleep for 4sec'
           }
@@ -43,7 +43,7 @@ free -h
       }
     }
 
-    stage('') {
+    stage('error') {
       steps {
         sh 'll'
       }
