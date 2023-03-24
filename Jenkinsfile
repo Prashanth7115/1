@@ -45,7 +45,7 @@ free -h
 
     stage('error') {
       steps {
-        sh 'll'
+        sh 'ls'
       }
     }
 
